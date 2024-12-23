@@ -525,7 +525,7 @@ const createQuestion = () => {
   const timerDisplay = document.querySelector(".quiz-container .timer");
   timerDisplay.classList.remove("danger");
 
-  timerDisplay.textContent = `Kalan Süre: 5 saniye`;
+  timerDisplay.textContent = `Kalan Süre: 05 saniye`;
 
   timerInterval = setInterval(() => {
     timerDisplay.textContent = `Kalan Süre: ${secondsLeft
