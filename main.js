@@ -521,11 +521,11 @@ const checkAnswer = (e) => {
 const createQuestion = () => {
   clearInterval(timerInterval);
 
-  let secondsLeft = 9;
+  let secondsLeft = 4;
   const timerDisplay = document.querySelector(".quiz-container .timer");
   timerDisplay.classList.remove("danger");
 
-  timerDisplay.textContent = `Kalan Süre: 10 saniye`;
+  timerDisplay.textContent = `Kalan Süre: 5 saniye`;
 
   timerInterval = setInterval(() => {
     timerDisplay.textContent = `Kalan Süre: ${secondsLeft
