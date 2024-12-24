@@ -484,7 +484,7 @@ const startBtn = document.querySelector(".start-btn-container .start-btn");
 
 let questionNumber = 0;
 let score = 0;
-const MAX_QUESTIONS = 10;
+const MAX_QUESTIONS = 50;
 let timerInterval;
 
 const shuffleArray = (array) => {
@@ -521,11 +521,11 @@ const checkAnswer = (e) => {
 const createQuestion = () => {
   clearInterval(timerInterval);
 
-  let secondsLeft = 4;
+  let secondsLeft = 9;
   const timerDisplay = document.querySelector(".quiz-container .timer");
   timerDisplay.classList.remove("danger");
 
-  timerDisplay.textContent = `Kalan Süre: 05 saniye`;
+  timerDisplay.textContent = `Kalan Süre: 10 saniye`;
 
   timerInterval = setInterval(() => {
     timerDisplay.textContent = `Kalan Süre: ${secondsLeft
